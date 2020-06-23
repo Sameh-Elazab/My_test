@@ -1,0 +1,11 @@
+from selenium import webdriver
+import time
+driver = webdriver.Chrome()
+
+def Task1():
+    driver.find_element_by_xpath('/html/body/div[5]/div[3]/div[3]/div[2]/a[1]').click()
+    time.sleep(5)
+    driver.find_element_by_xpath('/html/body/div[5]/div[2]/div[1]/div[2]/div/div/div[2]/form/table/tbody/tr[2]/td[7]/input').click()
+    time.sleep(5)
+    driver.find_element_by_xpath('/html/body/div[5]/div[2]/div[1]/div[2]/div/div/div[2]/form/div/button').click()
+    time.sleep(10)
